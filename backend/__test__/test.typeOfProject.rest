@@ -1,0 +1,12 @@
+GET http://localhost:3090/typeOfProject
+
+###
+
+POST http://localhost:3090/typeOfProject
+Content-Type: application/json
+
+{
+  "name": "Web Developer",
+  "description": "Web",
+  "projects": []
+}

@@ -1,0 +1,46 @@
+GET http://localhost:3090/user
+
+###
+
+GET http://localhost:3090/user/61a6632ed206da571476b208
+
+###
+
+POST http://localhost:3090/user
+content-type: application/json
+
+{
+  "name": "Jose Luis 2",
+  "email": "jos@isdi.com",
+  "passwd": "1234",
+  "typeUser": "User",
+  "project": []
+}
+
+###
+
+POST http://localhost:3090/user
+content-type: application/json
+
+{
+  "name": "Ana",
+  "email": "pep@sample.com",
+  "passwd": "1234",
+  "typeUser": "Professional",
+  "project": []
+}
+
+###
+
+PATCH http://localhost:3090/user/61a66333d206da571476b20e
+Content-Type: application/json
+
+{
+  "name": "Macarena",
+  "email": "maca@sample.com",
+  "typeUser": "Professional"
+}
+
+###
+
+DELETE http://localhost:3090/user/61a9da9a2d09139144bf58b8

@@ -1,0 +1,48 @@
+/* eslint-disable no-underscore-dangle */
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import * as action from '../../redux/project/action-creator';
+
+export function Project({ project }) {
+  const dispatch = useDispatch();
+
+  const deletedProject = () => {
+    dispatch(action.removeProject(project._id));
+  };
+
+  const template = (
+    <li>
+      {userLogged._id === project.user._id ? (
+          <>
+      <div className="project_detail">
+        
+        <Link to={`/detail/${project._id}`}>
+          <h2>{project.name}</h2>
+          <div className="card__cover">
+            <img src={project.pictures[0].avatar} alt={project.brand} />
+          </div>
+          <p>{project.typology.description}</p>
+        </Link>
+
+        
+            <div>
+              <span
+                role="button"
+                tabIndex="-1"
+                className="project__delete-button"
+                onClick={() => {
+                  deletedProject(project);
+                }}
+              >
+                X
+              </span>
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+    </li>
+  );
+  return template;
+}

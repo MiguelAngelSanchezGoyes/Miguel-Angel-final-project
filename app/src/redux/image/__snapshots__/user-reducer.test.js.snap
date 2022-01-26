@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`userReducer reducer should handle imageReducer.add 1`] = `
+Object {
+  "image": undefined,
+}
+`;
+
+exports[`userReducer reducer should handle imageReducer.update 1`] = `Array []`;
+
+exports[`userReducer reducer should return the initial state 1`] = `
+Object {
+  "image": Object {},
+  "images": Array [],
+}
+`;

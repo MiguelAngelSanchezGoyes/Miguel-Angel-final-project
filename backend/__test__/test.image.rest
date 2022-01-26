@@ -1,0 +1,18 @@
+GET  http://localhost:3090/image
+
+###
+
+GET http://localhost:3090/image/61a8a33dcfbb855399cfcb0d
+
+###
+
+PATCH http://localhost:3090/image/61a8a33dcfbb855399cfcb0d
+Content-Type: application/json
+
+{
+  "name": "Raul"
+}
+
+###
+
+DELETE http://localhost:3090/image/61a89802cfbb855399cfcb08

@@ -1,0 +1,39 @@
+GET http://localhost:3090/project
+
+###
+
+GET http://localhost:3090/project/61b4be1ec24a1bc08225529d
+
+###
+
+POST http://localhost:3090/project
+Content-Type: application/json
+
+{
+  "brand": "Project Jose TTTTTTTT",
+  "name": "test sssssss",
+  "description": "Test of tests",
+  "viewer":"puede que si",
+  "blueprints":"esperemos",
+  "typologyId": "61a798616c16512e20a9dab9",
+  "userId": "61b5e995d3f9aa7143c36520",
+  "picturesId": "61a8a31ccfbb855399cfcb0b"
+}
+
+###
+
+PATCH http://localhost:3090/project/61b4be1ec24a1bc08225529d
+Content-Type: application/json
+
+{
+  "brand": "Modificado Jose",
+  "name": "Cats",
+  "description": "sweet",
+  "image":{},
+  "viewer":"puede que si",
+  "blueprints":"esperemos"
+}
+
+###
+
+DELETE http://localhost:3090/project/61a8ab0961f31e6835183ac2

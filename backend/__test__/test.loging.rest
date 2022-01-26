@@ -1,0 +1,24 @@
+POST http://localhost:3090/login
+content-type: application/json
+
+{
+"name": "Pepe", "passwd": "12345"
+}
+
+###
+
+POST http://localhost:3090/login
+content-type: application/json
+
+{
+"userName": "Pepe", "passwd": "1234", "typeUser": "User"
+}
+
+###
+
+POST http://localhost:3090/login
+content-type: application/json
+
+{
+"userName": "Pepe", "passwd": "1234", "typeUser": "Professional"
+}
